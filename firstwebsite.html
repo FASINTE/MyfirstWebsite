@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-image: url("Landscape.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            justify-content: center;
+        }
+        .image {
+            flex: 0 0 auto;
+            margin-right: 40px;
+        }
+        .text {
+            flex: 1;
+            text-align: center;
+        }
+        h1 {
+            color: rgb(247, 247, 245);
+            text-align: center;
+            font-family: fantasy, sans-serif;
+            font-size: 50px;
+        }
+        p {
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            color: rgb(240, 238, 238);
+            text-align: center;
+            margin: 10px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        /* Social icons bar at bottom left */
+        .social-bar {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            align-items: center;
+            z-index: 100;
+        }
+        .social-bar h3 {
+            margin: 0;
+            margin-right: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            text-decoration: none;
+            color: #0e0c0c;
+            font-size: 22px;
+        }
+        .telegram {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #033046;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+        .telegram:hover {
+            color: #0088cc;
+        }
+        .tiktok {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #000000;
+            font-size: 24px;
+            margin-left: 20px;
+            transition: color 0.3s ease;
+        }
+        .tiktok:hover {
+            color: #ff0050;
+        }
+        .linkedIn {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #0A66C2;
+            font-size: 27px;
+            margin-left: 20px;
+            transition: color 0.3s ease;
+        }
+        .linkedIn:hover {
+            color: #004182;
+        }
+        .contact {
+            margin-top: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            text-decoration: none;
+            color: #0e0c0c;
+            font-size: 28px;
+        }
+        .youtube {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #FF0000;
+            font-size: 27px;
+            margin-left: 20px;
+            transition: color 0.3s ease;
+        }
+        .youtube:hover {
+            color: #cc0000;
+        }
+        .baby {
+            flex: 0 0 auto;
+            margin-left: 40px;
+            text-align: center;
+            button {
+                margin-top: 10px;
+                padding: 8px 12px;
+                font-size: 14px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                background-color: #030555;
+                color: white;
+                transition: background-color 0.3s ease;
+            }
+        }
+        .baby button:hover {
+            background-color: #000033;
+        }
+        .babyname {
+            margin-top: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            color: rgb(19, 11, 11);
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASINTEI VICTORIA</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="Myofficephoto.jpg" alt="My Office Photo" style="max-width:300px; max-height:600px; width:auto; height:auto; border-radius:10px;" >
+        </div>
+        <div class="baby">
+            <img src="Mybabyphoto.jpg" alt="My Baby Photo" style="max-width:300px; max-height:600px; width:auto; height:auto; border-radius:10px;" id="demo">
+            <h4 class="babyname" >My Baby Photo</h4>
+            <button onclick="document.getElementById('demo').style.display = 'none'"> Hide</button>
+            <button onclick="document.getElementById('demo').style.display = 'block'"> Reveal</button>
+        </div>
+        <div class="text">
+            <h1>FASINTEI VICTORIA TARIERE</h1>
+            <p>My name is FASINTEI VICTORIA TARIERE, I am a bright and determined 200-level Computer Engineering student at the University of Lagos. Originally from Bayelsa State and a proud member of the Redeemed Christian Church of God, I am working towards combining my strong faith with a deep passion for technology and innovation. I aspire to become a skilled Computer Engineer who uses technology to solve real-world problems and make a positive impact on society. With a commitment to excellence and a drive for continuous learning, I am dedicated to achieving my goals and contributing meaningfully to the tech industry.</p>
+        </div>    
+            <!-- Social bar at bottom left -->
+    <div class="social-bar">
+            <h3 class="contact">Visit me on:</h3>
+            <a class="telegram" href="https://telegram.com/t.me/Tari_ere" target="_blank" title="Victoria's Telegram page">
+                <ion-icon name="paper-plane-outline"></ion-icon>
+            </a>
+            <a class="tiktok" href="https://www.tiktok.com/@yo.girl.vicky01?_t=ZS-90NbeEy26Eb&_r=1" target="_blank" title="Victoria's TikTok page">
+                <ion-icon name="logo-tiktok"></ion-icon>
+            </a>
+            <a class="linkedIn" href="https://www.linkedin.com/in/fasintei-victoria-ba1590342?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="Victoria's LinkedIn page">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a class="youtube" href="https://youtube.com/@fasinteivictoria?si=3Me76gDP-h_wemh7" target="_blank" title="Victoria's YouTube page">
+                <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+
+    </div>
+    
+        </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
